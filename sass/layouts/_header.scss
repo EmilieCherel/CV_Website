@@ -1,0 +1,17 @@
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-menu li {
+  padding: 30px;
+  font-size: 1.4rem;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    border: 1px solid $color-secondary;
+    border-radius: 20px;
+    padding: 10px;
+  }
+}

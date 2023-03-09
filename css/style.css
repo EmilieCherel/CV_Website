@@ -1,12 +1,16 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sono", sans-serif;
+  color: white;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #000;
+  background: #0c192c;
 }
 
 .loader {
@@ -21,33 +25,31 @@ body {
 
 .loader-dual {
   position: absolute;
-  border: 2px solid #121212;
+  border: 2px solid #0c192c;
 }
 
-.loader-dual-big {
+.loader-dual__big {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #090909;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px #0c192c;
   border-radius: 50%;
   border-left: 2px solid #f403ec;
   border-top: 2px solid #f403ec;
-  animation: loader-animate 2s 2 linear both;
+  animation: loader-animate 2s 2 linear forwards;
 }
 
-.loader-dual-small {
+.loader-dual__small {
   top: 30px;
   left: 30px;
   right: 30px;
   bottom: 30px;
-  background: #090909;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px #0c192c;
   border-radius: 50%;
   border-right: 2px solid #834ce8;
   border-bottom: 2px solid #834ce8;
-  animation: loader-animate-reverse 2s 2 linear both;
+  animation: loader-animate-reverse 2s 2 linear forwards;
 }
 
 .circle {
@@ -70,22 +72,22 @@ body {
   right: -6px;
 }
 
-.loader-dual-big .circle {
+.loader-dual__big .circle {
   transform: rotate(-45deg);
 }
 
-.loader-dual-big .circle::before {
+.loader-dual__big .circle::before {
   background: #f403ec;
-  box-shadow: 0 0 20px #ff00bf, 0 0 40px #ff00bf, 0 0 60px #ff00bf, 0 0 80px #ff00bf, 0 0 100px #ff00bf, 0 0 0 5px rgba(255, 0, 191, 0.1);
+  box-shadow: 0 0 20px #f403ec, 0 0 40px #f403ec, 0 0 60px #f403ec, 0 0 80px #f403ec, 0 0 100px #f403ec, 0 0 0 5px #0c192c;
 }
 
-.loader-dual-small .circle {
+.loader-dual__small .circle {
   transform: rotate(-45deg);
 }
 
-.loader-dual-small .circle::before {
+.loader-dual__small .circle::before {
   background: #834ce8;
-  box-shadow: 0 0 20px #834ce8, 0 0 40px #834ce8, 0 0 60px #834ce8, 0 0 80px #834ce8, 0 0 100px #834ce8, 0 0 0 5px rgba(132, 3, 244, 0.1);
+  box-shadow: 0 0 20px #834ce8, 0 0 40px #834ce8, 0 0 60px #834ce8, 0 0 80px #834ce8, 0 0 100px #834ce8, 0 0 0 5px #0c192c;
 }
 
 @keyframes loader-animate {
@@ -95,6 +97,7 @@ body {
   100% {
     transform: rotate(360deg);
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes loader-animate-reverse {
@@ -104,6 +107,7 @@ body {
   100% {
     transform: rotate(0deg);
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes vanishing_home {
@@ -115,12 +119,78 @@ body {
   }
 }
 .vanishing {
-  animation: vanishing_home 12s 2s backwards;
+  position: relative;
+  animation: vanishing_home 8s 2s backwards;
 }
 
-p {
-  color: white;
-  font-size: 24px;
+.bubbles-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+}
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #834ce8;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(131, 76, 232, 0.2666666667), 0 0 50px #834ce8, 0 0 100px #834ce8;
+  animation: bubbles-animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #f403ec;
+  box-shadow: 0 0 0 10px rgba(244, 3, 236, 0.2666666667), 0 0 50px #f403ec, 0 0 100px #f403ec;
+}
+
+@keyframes bubbles-animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-menu li {
+  padding: 30px;
+  font-size: 1.4rem;
+}
+.nav-menu li a {
+  text-decoration: none;
+}
+.nav-menu li a:hover {
+  border: 1px solid #834ce8;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.main-container {
+  position: absolute;
+}
+
+.presentation__title {
+  font-size: 42px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.presentation__text {
+  text-align: center;
+  margin: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
