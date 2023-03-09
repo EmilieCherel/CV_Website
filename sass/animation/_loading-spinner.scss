@@ -24,7 +24,7 @@
   border-radius: 50%;
   border-left: 2px solid #f403ec;
   border-top: 2px solid #f403ec;
-  animation: loader-animate 2s 3 linear both;
+  animation: loader-animate 2s 2 linear both;
 }
 
 .loader-dual-small {
@@ -37,7 +37,7 @@
   border-radius: 50%;
   border-right: 2px solid #834ce8;
   border-bottom: 2px solid #834ce8;
-  animation: loader-animate-reverse 2s 3 linear both;
+  animation: loader-animate-reverse 2s 2 linear both;
 }
 .circle {
   position: absolute;
