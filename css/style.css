@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.loader-dual {
+  position: absolute;
+  border: 2px solid #121212;
+}
+
+.loader-dual-big {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #090909;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 50%;
+  border-left: 2px solid #f403ec;
+  border-top: 2px solid #f403ec;
+  animation: loader-animate 2s 3 linear both;
+}
+
+.loader-dual-small {
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  background: #090909;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 50%;
+  border-right: 2px solid #834ce8;
+  border-bottom: 2px solid #834ce8;
+  animation: loader-animate-reverse 2s 3 linear both;
+}
+
+.circle {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  transform-origin: left;
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  top: -4px;
+  right: -6px;
+}
+
+.loader-dual-big .circle {
+  transform: rotate(-45deg);
+}
+
+.loader-dual-big .circle::before {
+  background: #f403ec;
+  box-shadow: 0 0 20px #ff00bf, 0 0 40px #ff00bf, 0 0 60px #ff00bf, 0 0 80px #ff00bf, 0 0 100px #ff00bf, 0 0 0 5px rgba(255, 0, 191, 0.1);
+}
+
+.loader-dual-small .circle {
+  transform: rotate(-45deg);
+}
+
+.loader-dual-small .circle::before {
+  background: #834ce8;
+  box-shadow: 0 0 20px #834ce8, 0 0 40px #834ce8, 0 0 60px #834ce8, 0 0 80px #834ce8, 0 0 100px #834ce8, 0 0 0 5px rgba(132, 3, 244, 0.1);
+}
+
+@keyframes loader-animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader-animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+@keyframes vanishing_home {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.vanishing {
+  animation: vanishing_home 12s 2s backwards;
+}
+
+p {
+  color: white;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
