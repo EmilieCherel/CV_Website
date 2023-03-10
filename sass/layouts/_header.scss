@@ -8,10 +8,10 @@
   font-size: 1.4rem;
   a {
     text-decoration: none;
+    padding: 10px;
   }
   a:hover {
     border: 1px solid $color-secondary;
     border-radius: 20px;
-    padding: 10px;
   }
 }
