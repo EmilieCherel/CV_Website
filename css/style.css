@@ -133,6 +133,7 @@ body {
 .bubbles {
   position: relative;
   display: flex;
+  z-index: -100;
 }
 .bubbles span {
   position: relative;
@@ -197,8 +198,15 @@ body {
 }
 .presentation__skills__hard img {
   margin: 20px;
-  width: 80px;
+  width: 90px;
   height: 80px;
+  margin-left: 0;
+}
+.presentation__skills__soft ul {
+  column-count: 2;
+  list-style-type: none;
+  margin: 20px;
+  margin-left: 0;
 }
 
 .projects__slider {
@@ -278,6 +286,19 @@ body {
   100% {
     transform: translateX(0);
   }
+}
+.links h2 {
+  text-align: center;
+  margin: 5%;
+}
+.links__icons i {
+  font-size: 10vh;
+}
+.links__icons__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

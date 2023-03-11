@@ -15,8 +15,15 @@
   &__hard {
     img {
       margin: 20px;
-      width: 80px;
+      width: 90px;
       height: 80px;
+      margin-left: 0;
     }
+  }
+  &__soft ul {
+    column-count: 2;
+    list-style-type: none;
+    margin: 20px;
+    margin-left: 0;
   }
 }

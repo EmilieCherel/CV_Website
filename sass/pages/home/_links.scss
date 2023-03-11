@@ -1,0 +1,15 @@
+.links {
+  h2 {
+    text-align: center;
+    margin: 5%;
+  }
+  &__icons i {
+    font-size: 10vh;
+  }
+  &__icons__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+}
