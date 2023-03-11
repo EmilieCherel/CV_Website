@@ -68,18 +68,20 @@
         </div>
         <div class="main-container">
           <header>
-            <nav class="nav-menu">
+            <nav class="nav-menu element element--1">
               <ul>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Liens et Contact</a></li>
+                <li><a href="#projects__container">Projets</a></li>
+                <li><a href="#links__container">Liens et Contact</a></li>
               </ul>
             </nav>
           </header>
           <main>
             <div class="presentation">
-              <div class="presentation__title"><h1>Emilie SADAOUI</h1></div>
+              <div class="presentation__title element element--2">
+                <h1>Emilie SADAOUI</h1>
+              </div>
               <div class="presentation__skills">
-                <div class="presentation__skills__hard">
+                <div class="presentation__skills__hard element element--3">
                   <h2>Hard skills</h2>
                   <img src="./assets/techno_html_css.png" alt="HTML et CSS" />
                   <img src="./assets/techno_js.png" alt="JavaScript" />
@@ -87,7 +89,7 @@
                   <img src="./assets/techno_node.png" alt="Node.js" />
                   <img src="./assets/techno_express.png" alt="Express.js" />
                 </div>
-                <div class="presentation__skills__soft">
+                <div class="presentation__skills__soft element element--4">
                   <h2>Soft skills</h2>
                   <ul>
                     <li>Patience</li>
@@ -100,7 +102,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="presentation__text">
+              <div class="presentation__text element element--5">
                 <p>
                   Après un congé parental pour gérer mes deux enfants, je
                   souhaite reprendre ma carrière en main. Bientôt diplômée d’une
@@ -112,63 +114,69 @@
                 </p>
               </div>
             </div>
-            <div class="projects__slider">
-              <h2>Mes projets professionnalisants</h2>
-              <div class="projects__slides">
-                <div class="projects__slide">
+            <div id="projects__container">
+              <h2 class="element element--6">
+                Mes projets professionnalisants
+              </h2>
+              <div class="projects__cards">
+                <div class="projects__card element element--7">
                   <h3>Transformation d'une maquette en site web</h3>
                   <img src="./assets/project_1.gif" alt="projet 1" />
                 </div>
-                <div class="projects__slide">
+                <div class="projects__card element element--8">
                   <h3>Création d'animations CSS</h3>
                   <img src="./assets/project_2.gif" alt="projet 2" />
                 </div>
-                <div class="projects__slide">
+                <div class="projects__card element element--9">
                   <h3>Optimisation d'un site web existant</h3>
                   <img src="./assets/project_3.gif" alt="projet 3" />
                 </div>
-                <div class="projects__slide">
+                <div class="projects__card element element--10">
                   <h3>Création d'un site E-Commerce dynamique</h3>
                   <img src="./assets/project_4.gif" alt="projet 4" />
                 </div>
-                <div class="projects__slide">
+                <div class="projects__card element element--11">
                   <h3>Construction d'une API sécurisée</h3>
                   <img src="./assets/project_5.gif" alt="projet 5" />
                 </div>
-                <div class="projects__slide">
+                <div class="projects__card element element--12">
                   <h3>Création d'une application web</h3>
                   <img src="./assets/project_6.gif" alt="projet 6" />
                 </div>
               </div>
             </div>
-            <nav class="links">
-              <h2>Liens et Contact</h2>
-              <ul class="links__icons__wrapper">
-                <li class="links__icons">
-                  <a href="https://www.linkedin.com/in/emiliesadaoui">
-                    <i class="fa-brands fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="links__icons">
-                  <a href="https://github.com/EmilieCherel">
-                    <i class="fa-brands fa-square-github"></i>
-                  </a>
-                </li>
-                <li class="links__icons">
-                  <a href="#">
-                    <i class="fa-regular fa-file-pdf"></i>
-                  </a>
-                </li>
-                <li class="links__icons">
-                  <a href="mailto:emiliesadaoui@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div id="links__container">
+              <nav class="links">
+                <h2 class="element element--13">Liens et Contact</h2>
+                <ul class="links__icons__wrapper">
+                  <li class="links__icons element element--14">
+                    <a href="https://www.linkedin.com/in/emiliesadaoui">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="links__icons element element--15">
+                    <a href="https://github.com/EmilieCherel">
+                      <i class="fa-brands fa-square-github"></i>
+                    </a>
+                  </li>
+                  <li class="links__icons element element--16">
+                    <a href="./assets/CV_Sadaoui_Emilie.pdf">
+                      <i class="fa-regular fa-file-pdf"></i>
+                    </a>
+                  </li>
+                  <li class="links__icons element element--17">
+                    <a href="mailto:emiliesadaoui@gmail.com">
+                      <i class="fa-regular fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </main>
           <footer>
-            <div><a href="#">Mentions légales</a></div>
+            <div class="element element--18">
+              <a href="#">Mentions légales</a>
+            </div>
           </footer>
         </div>
       </div>

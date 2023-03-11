@@ -1,0 +1,24 @@
+//Animation de l'apparition progressive des élèments du site
+$anim-dur: 3000ms;
+$num-element: 18;
+$anim-delay: calc($anim-dur / $num-element);
+
+.element {
+  animation: element-apparition $anim-dur ease-in-out both;
+  @for $i from 1 to $num-element {
+    &--#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+  }
+}
+
+@keyframes element-apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

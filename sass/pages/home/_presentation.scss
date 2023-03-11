@@ -1,29 +1,31 @@
 .presentation__title h1 {
-  font-size: 60px;
+  font-size: 9vh;
   font-weight: 200;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 6.5vh;
 }
 .presentation__text {
   text-align: center;
-  margin: 30px;
+  font-size: x-large;
+  margin: 3.9vh;
 }
 .presentation__skills {
+  font-size: x-large;
   display: flex;
   justify-content: space-around;
-  padding: 50px;
+  padding: 6.5vh;
   &__hard {
     img {
-      margin: 20px;
-      width: 90px;
-      height: 80px;
+      margin: 2.6vh;
+      width: 11.7vh;
+      height: 10.4vh;
       margin-left: 0;
     }
   }
   &__soft ul {
     column-count: 2;
     list-style-type: none;
-    margin: 20px;
+    margin: 2.6vh;
     margin-left: 0;
   }
 }

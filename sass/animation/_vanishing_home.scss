@@ -1,6 +1,6 @@
 //Animation liée au loading spinner pour permettre de cacher puis faire apparaitre la page d'accueil avant et après le loading spinner
 
-@keyframes vanishing_home {
+@keyframes vanishing-home {
   0% {
     opacity: 0;
   }
@@ -8,7 +8,8 @@
     opacity: 1;
   }
 }
+
 .vanishing {
   position: relative;
-  animation: vanishing_home 8s 2s backwards;
+  animation: vanishing-home 8s 2s backwards;
 }
