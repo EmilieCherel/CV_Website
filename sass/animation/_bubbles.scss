@@ -11,13 +11,13 @@
 
   span {
     position: relative;
-    width: 4vh;
-    height: 4vh;
+    width: 30px;
+    height: 30px;
     background: $color-secondary;
-    margin: 0 0.5vh;
+    margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 0 0 0 1.3vh #834ce844, 0 0 6.5vh $color-secondary,
-      0 0 13vh $color-secondary;
+    box-shadow: 0 0 0 10px #834ce844, 0 0 50px $color-secondary,
+      0 0 100px $color-secondary;
     animation: bubbles-animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
   }
@@ -25,15 +25,15 @@
 
 .bubbles span:nth-child(even) {
   background: $color-primary;
-  box-shadow: 0 0 0 1.3vh #f403ec44, 0 0 6.5vh $color-primary,
-    0 0 13vh $color-primary;
+  box-shadow: 0 0 0 10px #f403ec44, 0 0 50px $color-primary,
+    0 0 100px $color-primary;
 }
 
 @keyframes bubbles-animate {
   0% {
-    transform: translateY(100vh) scale(0);
+    transform: translateY(800px) scale(0);
   }
   100% {
-    transform: translateY(-10vh) scale(1);
+    transform: translateY(-80px) scale(1);
   }
 }

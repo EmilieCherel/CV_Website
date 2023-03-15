@@ -1,13 +1,22 @@
 .links {
   margin: 15%;
   &__icons i {
-    font-size: 10vh;
+    font-size: 75px;
     margin: 25px;
+    @media screen and (max-width: 425px) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: 374px) {
+      margin: 10px;
+    }
     &:hover {
       cursor: grab;
       text-shadow: $color-primary 1px 0 10px;
-      font-size: 10.5vh;
+      font-size: 80px;
       transition: 0.5s;
+      @media screen and (max-width: 425px) {
+        font-size: 60px;
+      }
     }
   }
   &__icons__wrapper {
