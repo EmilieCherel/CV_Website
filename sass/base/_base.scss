@@ -2,13 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sono", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: $color-background;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 37px;
+  color: white;
+  text-shadow: $color-primary 1px 0 10px;
 }

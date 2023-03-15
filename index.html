@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <script
@@ -81,90 +81,193 @@
                 <h1>Emilie SADAOUI</h1>
               </div>
               <div class="presentation__skills">
-                <div class="presentation__skills__hard element element--3">
-                  <h2>Hard skills</h2>
-                  <img src="./assets/techno_html_css.png" alt="HTML et CSS" />
-                  <img src="./assets/techno_js.png" alt="JavaScript" />
-                  <img src="./assets/techno_react.png" alt="React.js" />
-                  <img src="./assets/techno_node.png" alt="Node.js" />
-                  <img src="./assets/techno_express.png" alt="Express.js" />
-                </div>
-                <div class="presentation__skills__soft element element--4">
-                  <h2>Soft skills</h2>
-                  <ul>
-                    <li>Patience</li>
-                    <li>Persévérance</li>
-                    <li>Adaptabilité</li>
-                    <li>Rigueur</li>
-                    <li>Organisation</li>
-                    <li>Pédagogie</li>
-                    <li>Empathie</li>
-                  </ul>
+                <h2 class="section__title element element--3">Compétences</h2>
+                <div class="presentation__skills__hard__soft">
+                  <div class="presentation__skills__hard element element--4">
+                    <h3>Hard skills</h3>
+                    <img src="./assets/techno_html_css.png" alt="HTML et CSS" />
+                    <img src="./assets/techno_js.png" alt="JavaScript" />
+                    <img src="./assets/techno_react.png" alt="React.js" />
+                    <img src="./assets/techno_node.png" alt="Node.js" />
+                    <img src="./assets/techno_express.png" alt="Express.js" />
+                  </div>
+                  <div class="presentation__skills__soft element element--5">
+                    <h3>Soft skills</h3>
+                    <ul>
+                      <li>Patience</li>
+                      <li>Persévérance</li>
+                      <li>Adaptabilité</li>
+                      <li>Rigueur</li>
+                      <li>Organisation</li>
+                      <li>Pédagogie</li>
+                      <li>Empathie</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="presentation__text element element--5">
+              <div class="presentation__text element element--6">
+                <h2 class="section__title element element--7">Présentation</h2>
                 <p>
-                  Après un congé parental pour gérer mes deux enfants, je
-                  souhaite reprendre ma carrière en main. Bientôt diplômée d’une
-                  formation de Développeuse web, j’aimerai mettre à profit mes
-                  nouvelles compétences ainsi que celles que j’ai pu développer
-                  lors de mes précédentes expériences professionnelles.
-                  Persévérante et dynamique, je saurai m’adapter rapidement à
-                  mon nouvel environnement de travail.
+                  Après un congé parental pour élever mes deux enfants, je
+                  souhaite reprendre ma carrière en main.<br />
+                  Bientôt diplômée d’une formation de Développeur web, je veux
+                  mettre à profit mes nouvelles compétences en langages HTML,
+                  CSS et JavaScript, ainsi que dans la bibliothèque React,
+                  l'environnement Node et le framework Express. <br />
+                  Depuis 2015, année de mon arrivée dans l’informatique, ce
+                  domaine a été une véritable révélation pour moi. <br />J’ai pu
+                  y satisfaire ma curiosité, mon amour de la logique, de la
+                  rigueur et mon goût pour la formation en continue.
                 </p>
               </div>
             </div>
             <div id="projects__container">
-              <h2 class="element element--6">
+              <h2 class="section__title element element--8">
                 Mes projets professionnalisants
               </h2>
-              <div class="projects__cards">
-                <div class="projects__card element element--7">
-                  <h3>Transformation d'une maquette en site web</h3>
-                  <img src="./assets/project_1.gif" alt="projet 1" />
-                </div>
-                <div class="projects__card element element--8">
-                  <h3>Création d'animations CSS</h3>
-                  <img src="./assets/project_2.gif" alt="projet 2" />
-                </div>
-                <div class="projects__card element element--9">
-                  <h3>Optimisation d'un site web existant</h3>
-                  <img src="./assets/project_3.gif" alt="projet 3" />
-                </div>
-                <div class="projects__card element element--10">
-                  <h3>Création d'un site E-Commerce dynamique</h3>
-                  <img src="./assets/project_4.gif" alt="projet 4" />
-                </div>
-                <div class="projects__card element element--11">
-                  <h3>Construction d'une API sécurisée</h3>
-                  <img src="./assets/project_5.gif" alt="projet 5" />
-                </div>
-                <div class="projects__card element element--12">
-                  <h3>Création d'une application web</h3>
-                  <img src="./assets/project_6.gif" alt="projet 6" />
-                </div>
+              <div class="details__project__wrapper">
+                <details class="details__project element element--9">
+                  <summary>
+                    Transformation d'une maquette en site web - Booki
+                    <span class="marker"></span>
+                  </summary>
+                  <div class="project__text__img">
+                    <h3>Techno(s) utilisée(s) : HTML5 & CSS3</h3>
+                    <div class="project__img">
+                      <a href="./assets/project_1_big.gif" target="_blank">
+                        <img
+                          class="project__img__desktop"
+                          src="./assets/project_1.gif"
+                          alt="projet Booki version desktop"
+                        />
+                      </a>
+                    </div>
+                    <p>Septembre 2022</p>
+                  </div>
+                </details>
+                <details class="details__project element element--10">
+                  <summary>
+                    Création d'animations CSS - Ohmyfood<span
+                      class="marker"
+                    ></span>
+                  </summary>
+                  <div class="project__text__img">
+                    <h3>Techno(s) utilisée(s) : HTML5 & CSS3 avec Sass</h3>
+                    <div class="project__img">
+                      <a href="./assets/project_2.gif" target="_blank">
+                        <img
+                          class="project__img__mobile"
+                          src="./assets/project_2.gif"
+                          alt="projet Ohmyfood version mobile"
+                        />
+                      </a>
+                    </div>
+                    <p>Octobre 2022</p>
+                  </div>
+                </details>
+                <details class="details__project element element--11">
+                  <summary>
+                    Optimisation du SEO et de l'accessibilité d'un site web
+                    existant - La Panthère<span class="marker"></span>
+                  </summary>
+                  <div class="project__text__img">
+                    <h3>Techno(s) utilisée(s) : HTML5 & CSS3</h3>
+                    <div class="project__img">
+                      <a href="./assets/project_3_big.gif" target="_blank">
+                        <img
+                          class="project__img__desktop"
+                          src="./assets/project_3.gif"
+                          alt="projet LaPanthère version desktop"
+                        />
+                      </a>
+                    </div>
+                    <p>Novembre 2022</p>
+                  </div>
+                </details>
+                <details class="details__project element element--12">
+                  <summary>
+                    Création d'un site E-Commerce - Kanap<span
+                      class="marker"
+                    ></span>
+                  </summary>
+                  <div class="project__text__img">
+                    <h3>Techno(s) utilisée(s) : JavaScript</h3>
+                    <div class="project__img">
+                      <a href="./assets/project_4.gif" target="_blank">
+                        <img
+                          class="project__img__desktop"
+                          src="./assets/project_4.gif"
+                          alt="projet Kanap version desktop"
+                        />
+                      </a>
+                    </div>
+                    <p>Décembre 2022</p>
+                  </div>
+                </details>
+                <details class="details__project element element--13">
+                  <summary>
+                    Construction d'une API sécurisée - Piiquante<span
+                      class="marker"
+                    ></span>
+                  </summary>
+                  <div class="project__text__img">
+                    <h3>Techno(s) utilisée(s) : Node.js & Express</h3>
+                    <div class="project__img">
+                      <a href="./assets/project_5_big.gif" target="_blank">
+                        <img
+                          class="project__img__desktop"
+                          src="./assets/project_5.gif"
+                          alt="projet Piiquante version desktop"
+                        />
+                      </a>
+                    </div>
+                    <p>Janvier 2023</p>
+                  </div>
+                </details>
+                <details class="details__project element element--14">
+                  <summary>
+                    Création d'une application web - Kasa<span
+                      class="marker"
+                    ></span>
+                  </summary>
+                  <div class="project__text__img">
+                    <h3>Techno(s) utilisée(s) : React.js</h3>
+                    <div class="project__img">
+                      <a href="./assets/project_6_big.gif" target="_blank">
+                        <img
+                          class="project__img__desktop"
+                          src="./assets/project_6.gif"
+                          alt="projet Kasa version desktop"
+                        />
+                      </a>
+                    </div>
+                    <p>Février 2023</p>
+                  </div>
+                </details>
               </div>
             </div>
             <div id="links__container">
               <nav class="links">
-                <h2 class="element element--13">Liens et Contact</h2>
+                <h2 class="section__title element element--15">
+                  Liens et Contact
+                </h2>
                 <ul class="links__icons__wrapper">
-                  <li class="links__icons element element--14">
+                  <li class="links__icons element element--16">
                     <a href="https://www.linkedin.com/in/emiliesadaoui">
                       <i class="fa-brands fa-linkedin"></i>
                     </a>
                   </li>
-                  <li class="links__icons element element--15">
+                  <li class="links__icons element element--17">
                     <a href="https://github.com/EmilieCherel">
                       <i class="fa-brands fa-square-github"></i>
                     </a>
                   </li>
-                  <li class="links__icons element element--16">
+                  <li class="links__icons element element--18">
                     <a href="./assets/CV_Sadaoui_Emilie.pdf">
                       <i class="fa-regular fa-file-pdf"></i>
                     </a>
                   </li>
-                  <li class="links__icons element element--17">
+                  <li class="links__icons element element--19">
                     <a href="mailto:emiliesadaoui@gmail.com">
                       <i class="fa-regular fa-envelope"></i>
                     </a>
@@ -174,7 +277,7 @@
             </div>
           </main>
           <footer>
-            <div class="element element--18">
+            <div class="element element--20">
               <a href="#">Mentions légales</a>
             </div>
           </footer>
