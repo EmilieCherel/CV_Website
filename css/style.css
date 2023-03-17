@@ -300,6 +300,27 @@ main {
   margin: 20px;
 }
 
+.presentation__photo {
+  display: flex;
+  justify-content: center;
+}
+.presentation__photo img {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 530px) {
+  .presentation__photo img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .presentation__photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .presentation__title h1 {
   font-size: 70px;
   font-weight: 500;
