@@ -185,64 +185,67 @@ main {
   animation: element-apparition 3000ms ease-in-out both;
 }
 .element--1 {
-  animation-delay: 142.8571428571ms;
+  animation-delay: 136.3636363636ms;
 }
 .element--2 {
-  animation-delay: 285.7142857143ms;
+  animation-delay: 272.7272727273ms;
 }
 .element--3 {
-  animation-delay: 428.5714285714ms;
+  animation-delay: 409.0909090909ms;
 }
 .element--4 {
-  animation-delay: 571.4285714286ms;
+  animation-delay: 545.4545454545ms;
 }
 .element--5 {
-  animation-delay: 714.2857142857ms;
+  animation-delay: 681.8181818182ms;
 }
 .element--6 {
-  animation-delay: 857.1428571429ms;
+  animation-delay: 818.1818181818ms;
 }
 .element--7 {
-  animation-delay: 1000ms;
+  animation-delay: 954.5454545455ms;
 }
 .element--8 {
-  animation-delay: 1142.8571428571ms;
+  animation-delay: 1090.9090909091ms;
 }
 .element--9 {
-  animation-delay: 1285.7142857143ms;
+  animation-delay: 1227.2727272727ms;
 }
 .element--10 {
-  animation-delay: 1428.5714285714ms;
+  animation-delay: 1363.6363636364ms;
 }
 .element--11 {
-  animation-delay: 1571.4285714286ms;
+  animation-delay: 1500ms;
 }
 .element--12 {
-  animation-delay: 1714.2857142857ms;
+  animation-delay: 1636.3636363636ms;
 }
 .element--13 {
-  animation-delay: 1857.1428571429ms;
+  animation-delay: 1772.7272727273ms;
 }
 .element--14 {
-  animation-delay: 2000ms;
+  animation-delay: 1909.0909090909ms;
 }
 .element--15 {
-  animation-delay: 2142.8571428571ms;
+  animation-delay: 2045.4545454545ms;
 }
 .element--16 {
-  animation-delay: 2285.7142857143ms;
+  animation-delay: 2181.8181818182ms;
 }
 .element--17 {
-  animation-delay: 2428.5714285714ms;
+  animation-delay: 2318.1818181818ms;
 }
 .element--18 {
-  animation-delay: 2571.4285714286ms;
+  animation-delay: 2454.5454545455ms;
 }
 .element--19 {
-  animation-delay: 2714.2857142857ms;
+  animation-delay: 2590.9090909091ms;
 }
 .element--20 {
-  animation-delay: 2857.1428571429ms;
+  animation-delay: 2727.2727272727ms;
+}
+.element--21 {
+  animation-delay: 2863.6363636364ms;
 }
 
 @keyframes element-apparition {
@@ -400,37 +403,37 @@ main {
   }
 }
 
-.element--9 {
+.element--10 {
   grid-column-start: 1;
   grid-column-end: span 2;
   grid-row: 1;
 }
 
-.element--10 {
+.element--11 {
   grid-column-start: 2;
   grid-column-end: span 3;
   grid-row: 2;
 }
 
-.element--11 {
+.element--12 {
   grid-column-start: 1;
   grid-column-end: span 2;
   grid-row: 3;
 }
 
-.element--12 {
+.element--13 {
   grid-column-start: 2;
   grid-column-end: span 3;
   grid-row: 4;
 }
 
-.element--13 {
+.element--14 {
   grid-column-start: 1;
   grid-column-end: span 2;
   grid-row: 5;
 }
 
-.element--14 {
+.element--15 {
   grid-column-start: 2;
   grid-column-end: span 3;
   grid-row: 6;

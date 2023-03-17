@@ -1,6 +1,6 @@
 //Animation de l'apparition progressive des élèments du site
 $anim-dur: 3000ms;
-$num-element: 21;
+$num-element: 22;
 $anim-delay: calc($anim-dur / $num-element);
 
 .element {
